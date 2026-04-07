@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/masterferanmi0708-set/sport/static/css/main.9fa0609a.css",
+    "main.js": "/masterferanmi0708-set/sport/static/js/main.3d086827.js",
+    "static/js/453.b82931bf.chunk.js": "/masterferanmi0708-set/sport/static/js/453.b82931bf.chunk.js",
+    "index.html": "/masterferanmi0708-set/sport/index.html",
+    "main.9fa0609a.css.map": "/masterferanmi0708-set/sport/static/css/main.9fa0609a.css.map",
+    "main.3d086827.js.map": "/masterferanmi0708-set/sport/static/js/main.3d086827.js.map",
+    "453.b82931bf.chunk.js.map": "/masterferanmi0708-set/sport/static/js/453.b82931bf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9fa0609a.css",
+    "static/js/main.3d086827.js"
+  ]
+}
