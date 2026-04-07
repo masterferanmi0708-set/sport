@@ -1,38 +1,398 @@
-.App {
+:root {
+        --gold: #c8a94a;
+        --dark: #0a1628;
+        --dark-card: rgba(255, 255, 255, 0.06);
+        --text-muted: #a0aec0;
+      }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f4f0;
+  color: #111;
+}
+ /* navbar */
+nav {
+  background: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: var(--dark);
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+ 
+.nav a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #555;
+  transition: color 0.2s;
+}
+ 
+.nav a:hover {
+  color: var(--gold);
+}
+
+.nav-logo span {
+  color: var(--gold);
+}
+
+.nav-btn {
+  background: var(--gold);
+  color: #2a1f00;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+ 
+.nav-btn:hover {
+  opacity: 0.85;
+}
+
+/* hero */
+
+.hero {
+  background-color: var(--dark);
+  color: #fff;
+  padding: 5rem 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero-badge {
+  display: inline-block;
+  background: var(--gold);
+  color: #2a1f00;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 64px;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero p {
+  font-size: 16px;
+  color: var(--text-muted);
+  max-width: 520px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+
+.hero-meta {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero-meta strong {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.hero-meta span {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.btn-gold {
+  background: var(--gold);
+  color: #2a1f00;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: opacity 0.2s;
+}
+
+.btn-gold:hover {
+  opacity: 0.85;
+}
+
+.btn-outline-white {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.btn-outline-white:hover {
+  border-color: #fff;
+}
+
+/* stats */
+
+.stats-section {
+  background: #fff;
+  padding: 2rem;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 1.5rem;
+  background: #f9f9f7;
+  border-radius: 10px;
+}
+
+.stat-card .num {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 36px;
+  color: var(--dark);
+  letter-spacing: 1px;
+}
+
+.stat-card .lbl {
+  font-size: 13px;
+  color: #777;
+  margin-top: 4px;
+}
+
+/* speakers */
+
+.speakers-section {
+  padding: 4rem 2rem;
+  background: #f4f4f0;
+}
+
+.section-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 1px;
+  margin-bottom: 0.25rem;
+}
+
+.section-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 36px;
+  letter-spacing: 1px;
+  color: var(--dark);
+  margin-bottom: 2rem;
+}
+
+ .speaker-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  transition: transform 0.2s;
+}
+
+.speaker-card:hover {
+  transform: translateY(-4px);
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 auto 1rem;
+} 
+
+/* avatar colours - add more if you need */
+.av-blue   { background: #B5D4F4; color: #0C447C; }
+.av-teal   { background: #9FE1CB; color: #085041; }
+.av-amber  { background: #FAC775; color: #633806; }
+.av-purple { background: #CECBF6; color: #3C3489; }
+.av-coral  { background: #F5C4B3; color: #712B13; }
+.av-green  { background: #C0DD97; color: #27500A; }
+
+.speaker-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--dark);
 }
 
-.App-link {
-  color: #61dafb;
+.speaker-role {
+  font-size: 12px;
+  color: #777;
+  margin-top: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* schedule */
+
+.schedule-section {
+  padding: 4rem 2rem;
+  background: #fff;
 }
+
+.schedule-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.schedule-item:last-child {
+  border-bottom: none;
+}
+
+.schedule-time {
+  font-size: 13px;
+  color: #777;
+  min-width: 70px;
+  padding-top: 2px;
+}
+
+.schedule-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gold);
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.schedule-event {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.schedule-speaker {
+  font-size: 13px;
+  color: #777;
+  margin-top: 2px;
+} 
+
+/* tickets */
+
+.tickets-section {
+  background: var(--dark);
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.tickets-section .section-title {
+  color: #fff;
+}
+
+.tickets-section p {
+  color: var(--text-muted);
+  font-size: 15px;
+  margin-bottom: 2.5rem;
+}
+
+.ticket-card {
+  background: var(--dark-card);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.ticket-card.featured {
+  border: 2px solid var(--gold);
+}
+
+.ticket-type {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.ticket-price {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 36px;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.ticket-btn {
+  width: 100%;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.ticket-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.ticket-card.featured .ticket-btn {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #2a1f00;
+  font-weight: 600;
+}
+
+.ticket-card.featured .ticket-btn:hover {
+  opacity: 0.85;
+}
+
+/* footer */
+
+footer {
+  background: #05101f;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 13px;
+}
+
+footer span {
+  color: var(--gold);
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+        .hero h1 { font-size: 40px; }
+        .hero-meta { gap: 1.5rem; }
+        .nav-links { display: none; }
+      }
