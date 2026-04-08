@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/masterferanmi0708-set/sport/static/css/main.9fa0609a.css",
-    "main.js": "/masterferanmi0708-set/sport/static/js/main.4973abc7.js",
-    "static/js/453.b82931bf.chunk.js": "/masterferanmi0708-set/sport/static/js/453.b82931bf.chunk.js",
-    "index.html": "/masterferanmi0708-set/sport/index.html",
-    "main.9fa0609a.css.map": "/masterferanmi0708-set/sport/static/css/main.9fa0609a.css.map",
-    "main.4973abc7.js.map": "/masterferanmi0708-set/sport/static/js/main.4973abc7.js.map",
-    "453.b82931bf.chunk.js.map": "/masterferanmi0708-set/sport/static/js/453.b82931bf.chunk.js.map"
+    "main.css": "/sport/static/css/main.9fa0609a.css",
+    "main.js": "/sport/static/js/main.b583668d.js",
+    "static/js/453.b82931bf.chunk.js": "/sport/static/js/453.b82931bf.chunk.js",
+    "index.html": "/sport/index.html",
+    "main.9fa0609a.css.map": "/sport/static/css/main.9fa0609a.css.map",
+    "main.b583668d.js.map": "/sport/static/js/main.b583668d.js.map",
+    "453.b82931bf.chunk.js.map": "/sport/static/js/453.b82931bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9fa0609a.css",
-    "static/js/main.4973abc7.js"
+    "static/js/main.b583668d.js"
   ]
 }
