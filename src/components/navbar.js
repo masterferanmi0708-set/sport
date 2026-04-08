@@ -6,16 +6,16 @@ const Navbar = () => {
     <ul className="nav justify-content-center">
     
         <li className="nav-item">
-            <a className="nav-link" href="#">About</a>
+            <a className="nav-link" href="#about">About</a>
         </li>
         <li className="nav-item">
-            <a className="nav-link" href="#">Speakers</a>
+            <a className="nav-link" href="#speakers">Speakers</a>
         </li>
         <li className="nav-item">
-            <a className="nav-link" href="#">Schedule</a>
+            <a className="nav-link" href="#schedule">Schedule</a>
         </li>
         <li className="nav-item">
-            <a className="nav-link" href="#">Tickets</a>
+            <a className="nav-link" href="#tickets">Tickets</a>
         </li>
     </ul>
      <button className="nav-btn">Register now</button>
